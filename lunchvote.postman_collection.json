@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "4d7f52d2-d225-4a2a-bfb9-5522689babf1",
+		"name": "lunchvote",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10649901"
+	},
+	"item": [
+		{
+			"name": "Vote New Restaurant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/restaurants?restaurant=Astons",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "restaurant",
+							"value": "Astons"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Random Restaurant Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/restaurants",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"restaurants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove All Restaurants",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/restaurants",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"restaurants"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
